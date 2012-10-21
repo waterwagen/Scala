@@ -1,0 +1,53 @@
+////////////////
+// Variables ///
+////////////////
+
+def codelibrary_root = "${projectDir}/../../CodeLibrary"
+
+///////////////////
+/// Build Setup ///
+/////////////////// 
+
+//defaultTasks 'intro'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+apply plugin: 'sonar'
+
+compileJava {
+	sourceCompatibility = 1.7
+}
+
+test {
+	exclude '**/*Tests.class'
+	jvmArgs '-Xms256m', '-Xmx512m', '-XX:MaxPermSize=128m'
+	forkEvery=1 // how many test classes should be run before creating a new JVM instance
+//	maxParallelForks = 5 // how many test classes should be run at the same time
+}
+
+sonar {
+    server {
+        url = 'http://localhost:9000'
+    }
+    database {
+        url = 'jdbc:oracle:thin:sonar/sonar@localhost:1521:XE'
+		driverClassName = 'oracle.jdbc.OracleDriver'
+    }
+}
+
+dependencies {
+	compile 'org.scala-lang:scala-library:2.9.2'
+	testCompile	'org.hamcrest:hamcrest-all:1.3', // keep this above the junit and possibly the jmock dependencies because they have older versions of hamcrest embedded
+				'org.jmock:jmock-junit4:2.5.1'
+	testCompile ('junit:junit:4.10') {transitive = false} // don't want the hamcrest version this pulls in transitively
+	testCompile('org.jmock:jmock:2.5.1') {transitive = false} // don't want the hamcrest version this pulls in transitively
+	scalaTools 'org.scala-lang:scala-compiler:2.9.2',
+				'org.scala-lang:scala-library:2.9.2'
+//	groovy 'org.codehaus.groovy:groovy-all:2.0.1'
+//	runtime fileTree(dir: 'libs', include: '*.jar')
+}
+
+repositories {
+	mavenCentral()
+}
