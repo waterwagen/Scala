@@ -1,15 +1,18 @@
 package com.waterwagen
 
+import scala.actors.Actor._
+import scala.actors._
+
 object HelloWorld extends App 
 {
 	println("Hello World")
 	
 	// Try defining a function
-	def valueFunc(multiplier : Int) = 
+	def multiply2By(multiplier : Int) = 
 	{
 		multiplier * 2
 	}	
-	println(valueFunc(3))
+	println(multiply2By(3))
 	
 	// Try case class (like an enum)
 	case class Pet(name:String, species:String)
@@ -40,7 +43,7 @@ object HelloWorld extends App
 	println("Does Scruffy exist=" + pet_list.exists(scruffy_finder))
 	
 	// Try a for loop (like For-Each)
-	val petlist_printer = (pet_list:List[Pet],header:String) =>
+	val petlist_printer = (pet_list : List[Pet], header : String) =>
 	{
 		val buffer = new StringBuffer()
 		buffer.append(header)
@@ -53,6 +56,13 @@ object HelloWorld extends App
 	val dog_list = pet_list.filter((pet:Pet)=>{if(pet.species=="dog")true;else false})
 	println(petlist_printer(dog_list,"Dog list:"))
 	
+	// Try a range in a for loop
+	println("Running through a loop.")
+	for(i <- 1 to 3)
+	{
+		println("Loop iteration " + i)
+	}	
+	
 	// Try equality operators
 	val two1 = 2
 	val two2 = 2
@@ -64,4 +74,28 @@ object HelloWorld extends App
 	assert(str1.equals(str2)) // checks for equality as in java
 	assert(str1 == str2) // same as equals() method, unlike Java
 	assert(str1.eq(str2)) // actually checks for same reference, in Java this would be the == operator
+	
+	// Additions to String from the StringOps class
+	val str = "blah"
+	assert(str.capitalize == "Blah")
+	assert(str.head == 'b')
+	assert(str.last == 'h')
+	assert(str.drop(2) == "ah")
+	assert(str.take(2) == "bl")
+	
+	// Numbers
+	assert(99.44.toInt == 99)
+	assert(8 * 5 + 2 == 42)
+	
+	trait Bedazzler
+	{
+		def bedazzle : String = 
+		{
+			"bedazzled!"
+		}
+	}
+	val bedazzled_pet = new Pet("Lapdog", "dog") with Bedazzler
+	println(bedazzled_pet)
+	println("Bedazzle value: " + bedazzled_pet.bedazzle)
+
 }
