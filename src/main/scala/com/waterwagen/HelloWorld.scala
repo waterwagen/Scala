@@ -38,7 +38,7 @@ object HelloWorld extends App
 			false
 	}
 	println("Does Scruffy exist=" + pet_list.exists(scruffy_finder))
-	println("Does Muffles exist=" + pet_list.exists((pet:Pet) => {if(pet.name=="Muffles")true;else false}))
+	println("Does Muffles exist=" + pet_list.exists((pet:Pet) => { if(pet.name=="Muffles") true; else false }))
 	pet_list = pet_list :+ new Pet("Scruffy", "dog")
 	println("Does Scruffy exist=" + pet_list.exists(scruffy_finder))
 	
@@ -53,7 +53,7 @@ object HelloWorld extends App
 		buffer.toString()
 	}
 	println(petlist_printer(pet_list,"Pet list:"))
-	val dog_list = pet_list.filter((pet:Pet)=>{if(pet.species=="dog")true;else false})
+	val dog_list = pet_list.filter((pet:Pet) => { if(pet.species=="dog") true; else false})
 	println(petlist_printer(dog_list,"Dog list:"))
 	
 	// Try a range in a for loop
