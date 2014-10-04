@@ -1,20 +1,9 @@
 package com.waterwagen
 
-//import scala.actors.Actor._
-//import scala.actors._
-import scala.collection.mutable.HashSet
-import scala.collection.mutable.Set
+import com.waterwagen.LinkedListBuilder._
 import scala.collection.mutable.ArrayBuffer
 
-import org.junit.Assert._
-import org.junit.Before
-
-import org.hamcrest.Matchers._
-import org.hamcrest.MatcherAssert.assertThat
-
-import com.waterwagen.LinkedListBuilder._
-
-object AdditionByLinkedListReversedNumbers extends App 
+object AdditionByLinkedListReversedNumbers extends App
 {
 	def stringValueOf(node : DoublyLinkedListNode) =
 	{
@@ -31,7 +20,8 @@ object AdditionByLinkedListReversedNumbers extends App
 		
 		builder toString
 	}
-	
+
+  // this is in com.waterwagen.LinkedListBuilder, which is in the test folder
 	val head1 = aLinkedListStartingWith(7).
 				withValue(3).
 				withValue(2).
