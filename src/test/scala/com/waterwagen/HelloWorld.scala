@@ -2,8 +2,6 @@ package com.waterwagen
 
 // need to migrate to Akka library
 // http://docs.scala-lang.org/overviews/core/actors-migration-guide.html
-import scala.actors.Actor._
-import scala.actors._
 
 object HelloWorld extends App 
 {

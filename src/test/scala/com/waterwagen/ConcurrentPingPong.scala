@@ -3,9 +3,6 @@ package com.waterwagen
 import scala.actors.Actor._
 import scala.actors._
 
-import java.util.TreeSet
-import scala.collection.mutable.HashSet
-
 object ConcurrentPingPong extends App 
 {
 	case class Message(msg:String)

@@ -1,6 +1,7 @@
 package com.waterwagen
 
 import com.waterwagen.LinkedListBuilder._
+
 import scala.collection.mutable.ArrayBuffer
 
 object AdditionByLinkedListReversedNumbers extends App

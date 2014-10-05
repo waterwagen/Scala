@@ -1,6 +1,5 @@
 package com.waterwagen
 
-import java.util.TreeSet
 import scala.collection.mutable.HashSet
 
 object CrackingCodingInterviewProblem1Dot7 extends App 

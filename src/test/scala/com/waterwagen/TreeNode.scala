@@ -1,4 +1,5 @@
 package com.waterwagen
+
 import scala.reflect.BeanProperty
 import scala.collection.mutable.Queue
 import scala.collection.mutable.Set

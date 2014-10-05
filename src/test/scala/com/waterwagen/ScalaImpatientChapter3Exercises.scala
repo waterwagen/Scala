@@ -2,19 +2,16 @@ package com.waterwagen
 
 //import scala.actors.Actor._
 //import scala.actors._
-import scala.collection.JavaConversions._
-import scala.collection.mutable.HashSet
-import scala.collection.mutable.Set
-import scala.collection.mutable.ArrayBuffer
-import scala.util.Random
-import org.junit.Assert._
-import org.junit.Before
-import org.hamcrest.Matchers._
-import org.hamcrest.MatcherAssert.assertThat
-import com.waterwagen.LinkedListBuilder._
-import java.util.TimeZone
 import java.awt.datatransfer._
-import scala.collection.mutable.Buffer
+import java.util.TimeZone
+
+import org.hamcrest.MatcherAssert.assertThat
+import org.hamcrest.Matchers._
+import org.junit.Assert._
+
+import scala.collection.JavaConversions._
+import scala.collection.mutable.{ArrayBuffer, Buffer}
+import scala.util.Random
 
 object ScalaImpatientChapter3Exercises extends App 
 {

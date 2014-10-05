@@ -1,5 +1,5 @@
 package com.waterwagen
-import scala.collection.mutable.LinkedList
+
 import scala.collection.mutable.ArrayBuffer
 
 object Recursion extends App 
