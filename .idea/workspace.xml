@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb329ef2-3c07-4cec-9a3d-bfaa5cf641d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/BreakingOutOfALoopOrAnyBlockOfCode.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/BreakingOutOfALoopOrAnyBlockOfCode.scala" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/AdditionByLinkedListReversedNumbers.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/AdditionByLinkedListReversedNumbers.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/CaseMatching.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/CaseMatching.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/Concurrency.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/Concurrency.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/ConcurrentPingPong.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/ConcurrentPingPong.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/CountingDownInAForLoop.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/CountingDownInAForLoop.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/CrackingCodingInterviewProblem1Dot7.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/CrackingCodingInterviewProblem1Dot7.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/DeleteDuplicatesInLinkedList.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/DeleteDuplicatesInLinkedList.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/DeleteDuplicatesInLinkedListNoDataStructures.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/DeleteDuplicatesInLinkedListNoDataStructures.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/DoublyLinkedListNode.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/DoublyLinkedListNode.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/Folds.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/Folds.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/HelloWorld.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/HelloWorld.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/PartitionLinkedList.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/PartitionLinkedList.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/ProductOfCharactersInAString.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/ProductOfCharactersInAString.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/ReadingCommandLineInput.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/ReadingCommandLineInput.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/Recursion.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/Recursion.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/Sandbox.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/Sandbox.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/ScalaImpatientChapter3Exercises.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/ScalaImpatientChapter3Exercises.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/ScalaImpatientChapter4Exercises.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/ScalaImpatientChapter4Exercises.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/TreeNode.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/TreeNode.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/TreeStudy.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/TreeStudy.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/VarargsMethod.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/VarargsMethod.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/com/waterwagen/YieldingWithForLoops.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/YieldingWithForLoops.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scala.iml" afterPath="$PROJECT_DIR$/Scala.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Scala.iws" />
@@ -55,21 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestNode.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestNode.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="750">
-              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.7241379" vertical-offset="0" max-vertical-offset="750">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Matchers.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.1/b988c01468e3398d46678a2eb48aeb5bde271e9f/hamcrest-library-1.1.jar!/org/hamcrest/Matchers.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.88" vertical-offset="508" max-vertical-offset="1785">
+              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoublyLinkedListNode.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/DoublyLinkedListNode.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -395,8 +376,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/waterwagen/BreakingOutOfALoopOrAnyBlockOfCode.scala" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/scala/com/waterwagen/Recursion.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/waterwagen/TreeNode.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala" />
       </list>
     </option>
   </component>
@@ -715,7 +697,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -795,14 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/DoublyLinkedListNode.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6315789" vertical-offset="0" max-vertical-offset="380">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/VarargsMethod.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -863,18 +837,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="750">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.078947365" vertical-offset="0" max-vertical-offset="380">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/DoublyLinkedListNode.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.1/b988c01468e3398d46678a2eb48aeb5bde271e9f/hamcrest-library-1.1.jar!/org/hamcrest/Matchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.88" vertical-offset="508" max-vertical-offset="1785">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/waterwagen/TestNode.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7241379" vertical-offset="0" max-vertical-offset="750">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
