@@ -8,7 +8,7 @@ class TestNode
 {
 	var head : DoublyLinkedListNode = null
 	var tail : DoublyLinkedListNode = null
-	
+
 	@Before
 	def setUp()
 	{
@@ -26,20 +26,20 @@ class TestNode
 	@Test
 	def testNodeHoldsNext()
 	{
-		assertThat(head.next, is(notNullValue()))
+    assertThat(head.next, is(notNullValue[DoublyLinkedListNode]()))
 		assertThat(head.next.value, is(equalTo(2)))
 	}
 
 	@Test
 	def testNodeHoldsPrevious()
 	{
-		assertThat(head.next.prev, is(notNullValue()))
+		assertThat(head.next.prev, is(notNullValue[DoublyLinkedListNode]()))
 		assertThat(head.next.prev, is(equalTo(head)))
 	}
-	
-	@Test
+
+  @Test
 	def testTailNextIsNull()
 	{
-		assertThat(tail.next, is(nullValue()))
+		assertThat(tail.next, is(nullValue[DoublyLinkedListNode]()))
 	}
 }
