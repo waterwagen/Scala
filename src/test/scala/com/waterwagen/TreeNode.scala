@@ -1,9 +1,6 @@
 package com.waterwagen
 
-import scala.reflect.BeanProperty
 import scala.collection.mutable.Queue
-import scala.collection.mutable.Set
-import scala.collection.mutable.HashSet
 
 class TreeNode(init_value : Int)
 {

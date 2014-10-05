@@ -1,13 +1,10 @@
 package com.waterwagen
 
-import org.junit.Assert._
-import org.junit.Test
-import org.junit.Assert._
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers._
-import org.junit.Before
+import org.junit.{Before, Test}
 
-class TestNode 
+class TestNode
 {
 	var head : DoublyLinkedListNode = null
 	var tail : DoublyLinkedListNode = null
