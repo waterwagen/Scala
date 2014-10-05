@@ -33,7 +33,8 @@ object Recursion extends App
 	catch 
 	{
 		//http://oldfashionedsoftware.com/2008/09/27/tail-recursion-basics-in-scala/
-		case e:StackOverflowError => println("Stack overflow error caught during head recursion. Tail recursion in Scala has an optimization which avoids this.") 
-		case _ => println("unknown exception caught")
+		case e : StackOverflowError => println("Stack overflow error caught during head recursion. Tail recursion in Scala has an optimization which avoids this.")
+		case _ : Throwable => println("unknown exception caught")
 	}
 }
+
