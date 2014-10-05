@@ -5,7 +5,7 @@
       <configuration>
         <option name="compilerLibraryLevel" value="Project" />
         <option name="compilerLibraryName" value="Gradle:: scala-compiler-bundle-2.11.2" />
-        <option name="compilerOptions" value="-target:jvm-1.8" />
+        <option name="compilerOptions" value="-target:jvm-1.7" />
         <option name="deprecationWarnings" value="true" />
         <option name="uncheckedWarnings" value="true" />
       </configuration>
@@ -29,13 +29,13 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Gradle: scala-library-2.11.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: scala-actors-2.11.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-all-1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: jmock-junit4-2.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit-4.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: jmock-2.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit-dep-4.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-core-1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-library-1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-all-1.3" level="project" />
   </component>
 </module>
 
