@@ -7,7 +7,7 @@ import scala.util._
 // Java
 
 // this is my first scala application!
-object Reverse extends App {
+object SimpleScalaApplicationExercise extends App {
   for(index <- (0 until args.length).reverse) {
     printf("\n%s", args(index))
   }
