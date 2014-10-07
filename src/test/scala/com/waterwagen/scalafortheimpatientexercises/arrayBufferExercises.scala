@@ -1,7 +1,5 @@
 package com.waterwagen
 
-import scala.math._
-
 import scala.collection.mutable.ArrayBuffer
 
 object ArrayBufferExercises extends App {
@@ -47,7 +45,9 @@ object ArrayBufferExercises extends App {
   var foundFirstNegative = false
 
   def filter = (num: Int) => if (num < 0) {
-    val result = !foundFirstNegative; foundFirstNegative = true; result
+    val result = !foundFirstNegative;
+    foundFirstNegative = true;
+    result
   } else {
     true
   }

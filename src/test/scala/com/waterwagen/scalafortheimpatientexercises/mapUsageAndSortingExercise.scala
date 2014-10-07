@@ -1,14 +1,13 @@
 package com.waterwagen
 
 // Scala
-import scala.collection.mutable._
-import scala.util._
+
 import scala.collection.JavaConversions._
+
 // Java
-import java.awt.datatransfer._
+
 import java.io.File
-import java.util.Scanner
-import java.util.TreeMap
+import java.util.{Scanner, TreeMap}
 
 object MapUsageAndSortingExercise extends App {
   val scanner = new Scanner(new File("words.txt"))

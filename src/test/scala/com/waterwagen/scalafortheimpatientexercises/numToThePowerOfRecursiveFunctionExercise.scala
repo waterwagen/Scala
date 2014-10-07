@@ -14,7 +14,8 @@ object NumToThePowerOfRecursiveFunctionExercise extends App {
       num * numToPowerOf(num, power - 1)
     }
     else {
-      val y = numToPowerOf(num, power / 2); y * y
+      val y = numToPowerOf(num, power / 2);
+      y * y
     }
   }
 

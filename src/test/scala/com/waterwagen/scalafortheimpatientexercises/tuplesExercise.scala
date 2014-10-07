@@ -1,11 +1,6 @@
 package com.waterwagen
 
-// Scala
-import scala.collection.mutable._
-import scala.util._
-import scala.collection.JavaConversions._
 import scala.math._
-// Java
 
 object TuplesExercise extends App {
   def arrayAsString(array: Array[_ <: Any]) = {

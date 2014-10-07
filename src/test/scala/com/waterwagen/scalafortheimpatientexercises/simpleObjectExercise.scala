@@ -1,11 +1,5 @@
 package com.waterwagen
 
-import scala.collection.mutable._
-import scala.collection.JavaConversions._
-import scala.math._
-import scala.reflect._
-import scala.util._
-
 object SimpleObjectExercise extends App {
 
   object Conversions {

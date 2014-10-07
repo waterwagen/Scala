@@ -1,12 +1,12 @@
 package com.waterwagen
 
 // Scala
-import scala.collection.mutable._
-import scala.util._
+
 import scala.collection.JavaConversions._
+import scala.collection.mutable._
 import scala.math._
+
 // Java
-import java.util.Calendar
 
 object JavaPropertiesPrettyPrintingExercise extends App {
   val javaProperties: Map[String, String] = System.getProperties

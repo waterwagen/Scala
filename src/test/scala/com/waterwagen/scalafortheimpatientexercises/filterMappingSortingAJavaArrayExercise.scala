@@ -1,10 +1,6 @@
 package com.waterwagen
 
-import scala.collection.mutable._
-import scala.util._
-import scala.collection.JavaConversions._
 import java.util.TimeZone
-import java.util.Arrays
 
 object FilterMappingSortingAJavaArrayExercise extends App {
   def printTimeZones(timeZoneIds: Array[String]) {

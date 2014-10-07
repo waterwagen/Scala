@@ -1,7 +1,6 @@
 package com.waterwagen
 
 import scala.collection.mutable._
-import scala.util._
 
 object OrderByPositivesZerosNegativesExercise extends App {
   def orderByPositivesZerosNegatives(a: ArrayBuffer[Int]) {
@@ -10,10 +9,12 @@ object OrderByPositivesZerosNegativesExercise extends App {
     var numberOfZeros = 0
     for (index <- 0 until a.length; num = a(index)) {
       if (num == 0) {
-        numberOfZeros += 1; indexesToRemove.+=:(index)
+        numberOfZeros += 1;
+        indexesToRemove.+=:(index)
       }
       if (num < 0) {
-        negatives += num; indexesToRemove.+=:(index)
+        negatives += num;
+        indexesToRemove.+=:(index)
       } // prepend so we can remove items by index without affecting other indexes
     }
     for (index <- 0 until indexesToRemove.length) {

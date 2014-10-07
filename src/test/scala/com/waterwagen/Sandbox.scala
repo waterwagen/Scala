@@ -1,6 +1,5 @@
 package com.waterwagen
 
-object Sandbox extends App 
-{
+object Sandbox extends App {
 
 }
