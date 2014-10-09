@@ -2,6 +2,8 @@ package com.waterwagen.projecteuler
 
 import scala.annotation.tailrec
 
+import com.waterwagen.util.Utils._
+
 object Problem1 extends App {
 
   val maxNumber : Int = 1000
@@ -89,6 +91,6 @@ object Problem1 extends App {
                                                 new RecursiveSolution,
                                                 new ImmutableNonRecursiveSolution,
                                                 new FunctionalSolution)
-  solutions.foreach(p => printf("%s: total until %d is %d\n", p.solutionName, maxNumber, p.answer))
+  solutions.foreach(p => printf("%s: total until %d is %d\n\n", p.solutionName, maxNumber, time(p.answer)))
 }
 
