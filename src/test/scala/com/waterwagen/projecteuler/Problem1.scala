@@ -50,22 +50,45 @@ object Problem1 extends App {
 
   class RecursiveSolution extends Problem1Solution {
     override def answer(): Int = {
-      def threeOrFive(num : Int): Int = {
+      def threeOrFive(num: Int): Int = {
         // recursion exit logic
-        if(num >= maxNumber) {
+        if (num >= maxNumber) {
           return 0
         }
 
-        (if(isMultipleOf3Or5(num)) { num } else { 0 }) + threeOrFive(num + 1)
+        (if (isMultipleOf3Or5(num)) {
+          num
+        } else {
+          0
+        }) + threeOrFive(num + 1)
       }
 
       threeOrFive(0)
     }
   }
 
+  class ImmutableNonRecursiveSolution extends Problem1Solution {
+    override def answer(): Int = {
+      def threeOrFiveFactorValuesUntilMaxNumber() : List[Int] = {
+        val numRange : List[Int] = List.range(0, maxNumber)
+        for (num <- numRange if isMultipleOf3Or5(num)) yield num
+      }
+
+      threeOrFiveFactorValuesUntilMaxNumber().sum
+    }
+  }
+
+  class FunctionalSolution extends Problem1Solution {
+    override def answer(): Int = {
+      List.range(0, maxNumber).map(num => if(isMultipleOf3Or5(num)) { num } else { 0 } ).sum
+    }
+  }
+
   val solutions : List[Problem1Solution] = List(new StraightforwardSolution,
                                                 new TailRecursiveSolution,
-                                                new RecursiveSolution)
+                                                new RecursiveSolution,
+                                                new ImmutableNonRecursiveSolution,
+                                                new FunctionalSolution)
   solutions.foreach(p => printf("%s: total until %d is %d\n", p.solutionName, maxNumber, p.answer))
 }
 
