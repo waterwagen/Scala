@@ -1,8 +1,8 @@
-package com.waterwagen.projecteuler
+package com.waterwagen.projecteuler.solutions
+
+import com.waterwagen.projecteuler.{ProblemSolution, ProblemSolutionRunner}
 
 import scala.annotation.tailrec
-
-import com.waterwagen.util.Utils._
 
 object Problem1Solutions extends App with ProblemSolutionRunner {
 
