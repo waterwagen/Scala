@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 
 import com.waterwagen.util.Utils._
 
-object Problem1 extends App {
+object Problem1 extends App with ProblemSolutionRunner {
 
   val maxNumber : Int = 1000
 
@@ -80,11 +80,10 @@ object Problem1 extends App {
     }
   }
 
-  val solutions : List[ProblemSolution] = List(new StraightforwardSolution,
-                                                new TailRecursiveSolution,
-                                                new RecursiveSolution,
-                                                new ImmutableNonRecursiveSolution,
-                                                new FunctionalSolution)
-  solutions.foreach(p => printf("The %s total until %d is %d\n\n", p.solutionName, maxNumber, time(p.answer)))
+  runSolutions(List(new StraightforwardSolution,
+                    new TailRecursiveSolution,
+                    new RecursiveSolution,
+                    new ImmutableNonRecursiveSolution,
+                    new FunctionalSolution))
 }
 
