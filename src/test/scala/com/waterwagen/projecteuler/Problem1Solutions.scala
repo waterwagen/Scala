@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 
 import com.waterwagen.util.Utils._
 
-object Problem1 extends App with ProblemSolutionRunner {
+object Problem1Solutions extends App with ProblemSolutionRunner {
 
   val maxNumber : Int = 1000
 
