@@ -15,7 +15,7 @@ object Problem2Solutions extends App with ProblemSolutionRunner {
       @tailrec
       def evenFibonacciTotaler(previousPreviousNum : Int,
                                previousNum : Int,
-                               total : Int): Int = {
+                               total : Int) : Int = {
         val currentNum : Int = previousPreviousNum + previousNum
 
         // recursion exit condition
