@@ -12,13 +12,7 @@ object Problem1 extends App {
     num % 3 == 0 || num % 5 == 0
   }
 
-  trait Problem1Solution {
-    def answer() : Int
-
-    def solutionName() : String = this.getClass.getSimpleName
-  }
-
-  class StraightforwardSolution extends Problem1Solution {
+  class StraightforwardSolution extends ProblemSolution {
     override def answer(): Int = {
       var total : Int = 0
       for(num <- 1 until maxNumber) {
@@ -30,7 +24,7 @@ object Problem1 extends App {
     }
   }
 
-  class TailRecursiveSolution extends Problem1Solution {
+  class TailRecursiveSolution extends ProblemSolution {
     override def answer(): Int = {
       @tailrec
       def threeOrFive(num : Int, total : Int): Int = {
@@ -50,7 +44,7 @@ object Problem1 extends App {
     }
   }
 
-  class RecursiveSolution extends Problem1Solution {
+  class RecursiveSolution extends ProblemSolution {
     override def answer(): Int = {
       def threeOrFive(num: Int): Int = {
         // recursion exit logic
@@ -69,7 +63,7 @@ object Problem1 extends App {
     }
   }
 
-  class ImmutableNonRecursiveSolution extends Problem1Solution {
+  class ImmutableNonRecursiveSolution extends ProblemSolution {
     override def answer(): Int = {
       def threeOrFiveFactorValuesUntilMaxNumber() : List[Int] = {
         val numRange : List[Int] = List.range(0, maxNumber)
@@ -80,17 +74,17 @@ object Problem1 extends App {
     }
   }
 
-  class FunctionalSolution extends Problem1Solution {
+  class FunctionalSolution extends ProblemSolution {
     override def answer(): Int = {
       List.range(0, maxNumber).map(num => if(isMultipleOf3Or5(num)) { num } else { 0 } ).sum
     }
   }
 
-  val solutions : List[Problem1Solution] = List(new StraightforwardSolution,
+  val solutions : List[ProblemSolution] = List(new StraightforwardSolution,
                                                 new TailRecursiveSolution,
                                                 new RecursiveSolution,
                                                 new ImmutableNonRecursiveSolution,
                                                 new FunctionalSolution)
-  solutions.foreach(p => printf("%s: total until %d is %d\n\n", p.solutionName, maxNumber, time(p.answer)))
+  solutions.foreach(p => printf("The %s total until %d is %d\n\n", p.solutionName, maxNumber, time(p.answer)))
 }
 
