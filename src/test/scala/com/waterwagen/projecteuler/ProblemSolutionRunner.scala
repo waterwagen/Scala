@@ -4,7 +4,7 @@ import com.waterwagen.util.Utils._
 
 trait ProblemSolutionRunner {
 
-  def runSolutions(solutions : List[ProblemSolution]): Unit = {
+  def runSolutions[T](solutions : List[ProblemSolution[T]]): Unit = {
     solutions.foreach(p => printf("The %s total until %d is %d\n\n", p.solutionName, time(p.answer)))
   }
 

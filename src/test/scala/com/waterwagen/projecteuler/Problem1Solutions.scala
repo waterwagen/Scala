@@ -12,7 +12,7 @@ object Problem1Solutions extends App with ProblemSolutionRunner {
     num % 3 == 0 || num % 5 == 0
   }
 
-  class StraightforwardSolution extends ProblemSolution {
+  class StraightforwardSolution extends ProblemSolution[Int] {
     override def answer(): Int = {
       var total : Int = 0
       for(num <- 1 until maxNumber) {
@@ -24,7 +24,7 @@ object Problem1Solutions extends App with ProblemSolutionRunner {
     }
   }
 
-  class TailRecursiveSolution extends ProblemSolution {
+  class TailRecursiveSolution extends ProblemSolution[Int] {
     override def answer(): Int = {
       @tailrec
       def threeOrFive(num : Int, total : Int): Int = {
@@ -44,7 +44,7 @@ object Problem1Solutions extends App with ProblemSolutionRunner {
     }
   }
 
-  class RecursiveSolution extends ProblemSolution {
+  class RecursiveSolution extends ProblemSolution[Int] {
     override def answer(): Int = {
       def threeOrFive(num: Int): Int = {
         // recursion exit logic
@@ -63,7 +63,7 @@ object Problem1Solutions extends App with ProblemSolutionRunner {
     }
   }
 
-  class ImmutableNonRecursiveSolution extends ProblemSolution {
+  class ImmutableNonRecursiveSolution extends ProblemSolution[Int] {
     override def answer(): Int = {
       def threeOrFiveFactorValuesUntilMaxNumber() : List[Int] = {
         val numRange : List[Int] = List.range(0, maxNumber)
@@ -74,7 +74,7 @@ object Problem1Solutions extends App with ProblemSolutionRunner {
     }
   }
 
-  class FunctionalSolution extends ProblemSolution {
+  class FunctionalSolution extends ProblemSolution[Int] {
     override def answer(): Int = {
       List.range(0, maxNumber).map(num => if(isMultipleOf3Or5(num)) { num } else { 0 } ).sum
     }
